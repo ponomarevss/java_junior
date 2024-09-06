@@ -40,3 +40,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/src/main/java/ru/ponomarevss/lection2/
+/src/main/java/ru/ponomarevss/lesson2/seminar/
