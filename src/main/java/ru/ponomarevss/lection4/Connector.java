@@ -7,15 +7,15 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 public class Connector {
-    final StandardServiceRegistry standardServiceRegistry;
-    SessionFactory sessionFactory;
+//    final StandardServiceRegistry standardServiceRegistry;
+//    SessionFactory sessionFactory;
 
-    public Connector() {
-        standardServiceRegistry = new StandardServiceRegistryBuilder().configure().build();
-        sessionFactory = new MetadataSources(standardServiceRegistry).buildMetadata().buildSessionFactory();
-    }
+//    public Connector() {
+//        standardServiceRegistry = new StandardServiceRegistryBuilder().configure().build();
+//        sessionFactory = new MetadataSources(standardServiceRegistry).buildMetadata().buildSessionFactory();
+//    }
 
-    public Session getSession() {
-        return sessionFactory.openSession();
-    }
+//    public Session getSession() {
+//        return sessionFactory.openSession();
+//    }
 }

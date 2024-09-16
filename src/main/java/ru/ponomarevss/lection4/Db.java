@@ -8,17 +8,17 @@ import java.util.List;
 
 public class Db {
 
-    public static void hibernateConn() {
-        Connector connector = new Connector();
-        try(Session session = connector.getSession()) {
-            Transaction transaction = session.beginTransaction();
-            List<Magic> books = session.createQuery("FROM Magic", Magic.class).getResultList();
-            books.forEach(session::remove);
-            transaction.commit();
-        } catch (RuntimeException e) {
-            System.err.println(e.getMessage());;
-        }
-    }
+//    public static void hibernateConn() {
+//        Connector connector = new Connector();
+//        try(Session session = connector.getSession()) {
+//            Transaction transaction = session.beginTransaction();
+//            List<Magic> books = session.createQuery("FROM Magic", Magic.class).getResultList();
+//            books.forEach(session::remove);
+//            transaction.commit();
+//        } catch (RuntimeException e) {
+//            System.err.println(e.getMessage());;
+//        }
+//    }
 
 //    public static void hibernateConn() {
 //        Connector connector = new Connector();

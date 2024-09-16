@@ -5,10 +5,10 @@
 <hibernate-configuration>
     <session-factory>
         <!-- Database connection settings -->
-        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://students-db:3306/studentsDB</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">password</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/test</property>
+        <property name="connection.username">toor</property>
+        <property name="connection.password">toortoor</property>
 
         <!-- SQL dialect -->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
@@ -17,12 +17,9 @@
         <property name="hibernate.show_sql">true</property>
 
         <!-- Hibernate HBM2DDL auto -->
-        <property name="hibernate.hbm2ddl.auto">update</property>
-
-        <!-- Context configuration -->
-        <property name="hibernate.current_session_context_class">thread</property>
+        <!--        <property name="hibernate.hbm2ddl.auto">update</property>-->
 
         <!-- Other properties can be added here -->
-        <mapping class="ru.ponomarevss.lesson4.models.Student" />
+        <mapping class="ru.ponomarevss.lection4.Magic" />
     </session-factory>
 </hibernate-configuration>
